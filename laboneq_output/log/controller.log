@@ -866,3 +866,5 @@
 2025.08.21 21:06:02.010 | laboneq.pulse_sheet_viewer.pulse_sheet_viewer | INFO   Writing html file to c:\Users\qubit\Desktop\Yi\Measurement\Pulse_Sheets\Resonator_Spectroscopy_Pulse_Sheet_2025-08-21-21-06-01.html
 2025.08.21 21:06:02.342 | laboneq.controller.controller                 | INFO   Starting near-time execution...
 2025.08.21 21:06:02.364 | laboneq.controller.controller                 | INFO   Estimated RT execution time: 64.13 s.
+2025.08.21 21:07:06.541 | laboneq.controller.devices.device_zi          | WARNING SHFQC/QA:dev12296: Channel 0 Output overrange count: 1
+2025.08.21 21:07:06.574 | laboneq.controller.controller                 | INFO   Finished near-time execution.
