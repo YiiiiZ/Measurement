@@ -5,3 +5,87 @@
 2025.08.21 16:50:12.309 | laboneq.controller.devices.device_zi          | WARNING SHFQC/QA:dev12296: Include the device options 'SHFQC/QC4CH' in the device setup ('options' field of the 'instruments' list in the device setup descriptor, 'device_options' argument when constructing instrument objects to be added to 'DeviceSetup' instances). This will become a strict requirement in the future.
 2025.08.21 16:50:12.313 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
 2025.08.21 16:50:12.321 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.21 17:13:48.319 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\qubit\Desktop\Yi\Measurement\laboneq_output\log
+2025.08.21 17:13:48.321 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.51.0
+2025.08.21 17:13:48.324 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.21 17:13:48.327 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.04.0.628 at 127.0.0.1:8004
+2025.08.21 17:13:48.332 | laboneq.controller.devices.device_zi          | WARNING SHFQC/QA:dev12296: Include the device options 'SHFQC/QC4CH' in the device setup ('options' field of the 'instruments' list in the device setup descriptor, 'device_options' argument when constructing instrument objects to be added to 'DeviceSetup' instances). This will become a strict requirement in the future.
+2025.08.21 17:13:48.337 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.21 17:13:48.346 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.21 17:15:43.698 | laboneq.implementation.payload_builder.experiment_info_builder.experiment_info_builder | INFO   Resolved modulation type of oscillator 'readout_acquire_osc' on signal 'acquire' to HARDWARE
+2025.08.21 17:15:43.698 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.21 17:15:43.719 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.015 s]
+2025.08.21 17:15:43.759 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.042 s]
+2025.08.21 17:15:43.763 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.059 s]
+2025.08.21 17:15:43.770 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.21 17:15:43.771 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.21 17:15:43.772 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.21 17:15:43.774 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         27            0           0         0  
+2025.08.21 17:15:43.775 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.21 17:15:43.776 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      27[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m      0[0m[1m [0m 
+2025.08.21 17:15:43.778 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.21 17:15:43.782 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.21 17:16:38.652 | laboneq.implementation.payload_builder.experiment_info_builder.experiment_info_builder | INFO   Resolved modulation type of oscillator 'readout_acquire_osc' on signal 'acquire' to HARDWARE
+2025.08.21 17:16:38.654 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.21 17:16:38.672 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.016 s]
+2025.08.21 17:16:38.702 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.032 s]
+2025.08.21 17:16:38.702 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.050 s]
+2025.08.21 17:16:38.710 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.21 17:16:38.711 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.21 17:16:38.712 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.21 17:16:38.713 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         27            0           0         0  
+2025.08.21 17:16:38.713 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.21 17:16:38.713 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      27[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m      0[0m[1m [0m 
+2025.08.21 17:16:38.713 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.21 17:16:38.716 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.21 17:16:38.720 | laboneq.pulse_sheet_viewer.pulse_sheet_viewer | INFO   Recompiling the experiment due to missing extra information in the compiled experiment. Compile with `OUTPUT_EXTRAS=True` and `MAX_EVENTS_TO_PUBLISH=1000` to bypass this step with a small impact on the compilation time.
+2025.08.21 17:16:38.720 | laboneq.implementation.payload_builder.experiment_info_builder.experiment_info_builder | INFO   Resolved modulation type of oscillator 'readout_acquire_osc' on signal 'acquire' to HARDWARE
+2025.08.21 17:16:38.720 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.21 17:16:38.747 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.025 s]
+2025.08.21 17:16:38.778 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.031 s]
+2025.08.21 17:16:38.778 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.058 s]
+2025.08.21 17:16:38.778 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.21 17:16:39.031 | laboneq.pulse_sheet_viewer.pulse_sheet_viewer | INFO   Writing html file to c:\Users\qubit\Desktop\Yi\Measurement\Pulse_Sheets\Resonator_Spectroscopy_Pulse_Sheet_2025-08-21-17-16-38.html
+2025.08.21 17:16:46.311 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.21 17:16:46.316 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.04.0.628 at 127.0.0.1:8004
+2025.08.21 17:16:46.319 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.21 17:16:46.328 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.21 17:16:46.659 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.21 17:16:48.337 | laboneq.controller.devices.device_zi          | WARNING SHFQC/QA:dev12296: Channel 0 Output overrange count: 123
+2025.08.21 17:16:48.374 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.21 17:17:20.091 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.21 17:17:20.093 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.04.0.628 at 127.0.0.1:8004
+2025.08.21 17:17:20.099 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.21 17:17:20.108 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.21 17:17:20.422 | laboneq.controller.controller                 | INFO   Starting near-time execution...
+2025.08.21 17:17:22.100 | laboneq.controller.devices.device_zi          | WARNING SHFQC/QA:dev12296: Channel 0 Output overrange count: 107
+2025.08.21 17:17:22.136 | laboneq.controller.controller                 | INFO   Finished near-time execution.
+2025.08.21 17:20:24.285 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\qubit\Desktop\Yi\Measurement\laboneq_output\log
+2025.08.21 17:20:24.290 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.51.0
+2025.08.21 17:20:24.291 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.21 17:20:24.295 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.04.0.628 at 127.0.0.1:8004
+2025.08.21 17:20:24.299 | laboneq.controller.devices.device_zi          | WARNING SHFQC/QA:dev12296: Include the device options 'SHFQC/QC4CH' in the device setup ('options' field of the 'instruments' list in the device setup descriptor, 'device_options' argument when constructing instrument objects to be added to 'DeviceSetup' instances). This will become a strict requirement in the future.
+2025.08.21 17:20:24.306 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.21 17:20:24.317 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2025.08.21 17:20:24.375 | laboneq.implementation.payload_builder.experiment_info_builder.experiment_info_builder | INFO   Resolved modulation type of oscillator 'readout_acquire_osc' on signal 'acquire' to HARDWARE
+2025.08.21 17:20:24.377 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.21 17:20:24.395 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.015 s]
+2025.08.21 17:20:24.429 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.035 s]
+2025.08.21 17:20:24.429 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.053 s]
+2025.08.21 17:20:24.435 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.21 17:20:24.437 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mDevice      [0m[1m [0m [1m [0m[1mAWG[0m[1m [0m [1m [0m[1mSeqC LOC[0m[1m [0m [1m [0m[1mCT entries[0m[1m [0m [1m [0m[1mWaveforms[0m[1m [0m [1m [0m[1mSamples[0m[1m [0m 
+2025.08.21 17:20:24.438 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.21 17:20:24.438 | laboneq.compiler.workflow.reporter            | INFO     device_shfqc     0         27            0           0         0  
+2025.08.21 17:20:24.439 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.21 17:20:24.440 | laboneq.compiler.workflow.reporter            | INFO    [1m [0m[1mTOTAL       [0m[1m [0m [1m [0m[1m   [0m[1m [0m [1m [0m[1m      27[0m[1m [0m [1m [0m[1m         0[0m[1m [0m [1m [0m[1m         [0m[1m [0m [1m [0m[1m      0[0m[1m [0m 
+2025.08.21 17:20:24.440 | laboneq.compiler.workflow.reporter            | INFO    ────────────────────────────────────────────────────────────────── 
+2025.08.21 17:20:24.444 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.21 17:20:24.445 | laboneq.pulse_sheet_viewer.pulse_sheet_viewer | INFO   Recompiling the experiment due to missing extra information in the compiled experiment. Compile with `OUTPUT_EXTRAS=True` and `MAX_EVENTS_TO_PUBLISH=1000` to bypass this step with a small impact on the compilation time.
+2025.08.21 17:20:24.447 | laboneq.implementation.payload_builder.experiment_info_builder.experiment_info_builder | INFO   Resolved modulation type of oscillator 'readout_acquire_osc' on signal 'acquire' to HARDWARE
+2025.08.21 17:20:24.448 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2025.08.21 17:20:24.475 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.025 s]
+2025.08.21 17:20:24.503 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.030 s]
+2025.08.21 17:20:24.503 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.056 s]
+2025.08.21 17:20:24.503 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2025.08.21 17:20:24.520 | laboneq.pulse_sheet_viewer.pulse_sheet_viewer | INFO   Writing html file to c:\Users\qubit\Desktop\Yi\Measurement\Pulse_Sheets\Resonator_Spectroscopy_Pulse_Sheet_2025-08-21-17-20-24.html
+2025.08.21 17:20:24.850 | laboneq.controller.controller                 | INFO   Starting near-time execution...
