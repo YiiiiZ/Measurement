@@ -1,0 +1,7 @@
+2025.08.21 16:50:12.288 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is c:\Users\qubit\Desktop\Yi\Measurement\laboneq_output\log
+2025.08.21 16:50:12.288 | laboneq.controller.controller                 | INFO   VERSION: laboneq 2.51.0
+2025.08.21 16:50:12.295 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at 127.0.0.1:8004
+2025.08.21 16:50:12.303 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 25.04.0.628 at 127.0.0.1:8004
+2025.08.21 16:50:12.309 | laboneq.controller.devices.device_zi          | WARNING SHFQC/QA:dev12296: Include the device options 'SHFQC/QC4CH' in the device setup ('options' field of the 'instruments' list in the device setup descriptor, 'device_options' argument when constructing instrument objects to be added to 'DeviceSetup' instances). This will become a strict requirement in the future.
+2025.08.21 16:50:12.313 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2025.08.21 16:50:12.321 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
