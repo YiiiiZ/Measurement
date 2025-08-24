@@ -42342,3 +42342,60 @@
 2025.08.23 20:48:58.831   get /dev12296/raw/error/json/errors -
 2025.08.23 20:48:58.831   get /dev12296/raw/error/json/errors -
 2025.08.23 20:48:58.831   set /dev12296/qachannels/0/spectroscopy/envelope/enable 1
+2025.08.24 03:10:53.421 Node log from the data server with id 'zi_server':
+2025.08.24 03:10:53.422   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.08.24 03:10:53.422   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.08.24 03:10:53.422   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.08.24 03:10:53.422   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.08.24 03:10:53.422   get /dev12296/system/clocks/referenceclock/in/source -
+2025.08.24 03:10:53.422   get /dev12296/system/clocks/referenceclock/in/status -
+2025.08.24 03:10:53.422   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.08.24 03:10:53.422   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.08.24 03:10:53.422   get /dev12296/system/clocks/referenceclock/in/source -
+2025.08.24 03:10:53.423   get /dev12296/system/clocks/referenceclock/in/status -
+2025.08.24 03:12:01.882 Node log from the data server with id 'zi_server':
+2025.08.24 03:12:01.883   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.08.24 03:12:01.883   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.08.24 03:12:01.883   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.08.24 03:12:01.883   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.08.24 03:12:01.883   get /dev12296/system/clocks/referenceclock/in/source -
+2025.08.24 03:12:01.883   get /dev12296/system/clocks/referenceclock/in/status -
+2025.08.24 03:12:01.883   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.08.24 03:12:01.883   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.08.24 03:12:01.883   get /dev12296/system/clocks/referenceclock/in/source -
+2025.08.24 03:12:01.883   get /dev12296/system/clocks/referenceclock/in/status -
+2025.08.24 03:12:49.918 Node log from the data server with id 'zi_server':
+2025.08.24 03:12:49.918   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.08.24 03:12:49.918   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.08.24 03:12:49.918   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.08.24 03:12:49.919   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.08.24 03:12:49.919   get /dev12296/system/clocks/referenceclock/in/source -
+2025.08.24 03:12:49.919   get /dev12296/system/clocks/referenceclock/in/status -
+2025.08.24 03:12:49.919   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.08.24 03:12:49.919   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.08.24 03:12:49.919   get /dev12296/system/clocks/referenceclock/in/source -
+2025.08.24 03:12:49.919   get /dev12296/system/clocks/referenceclock/in/status -
+2025.08.24 03:18:58.761 Node log from the data server with id 'zi_server':
+2025.08.24 03:18:58.761   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.08.24 03:18:58.761   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.08.24 03:18:58.761   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.08.24 03:18:58.761   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.08.24 03:18:58.761   get /dev12296/system/clocks/referenceclock/in/source -
+2025.08.24 03:18:58.762   get /dev12296/system/clocks/referenceclock/in/status -
+2025.08.24 03:18:58.762   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.08.24 03:18:58.762   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.08.24 03:18:58.762   get /dev12296/system/clocks/referenceclock/in/source -
+2025.08.24 03:18:58.763   get /dev12296/system/clocks/referenceclock/in/status -
+2025.08.24 03:19:08.914 Node log from the data server with id 'zi_server':
+2025.08.24 03:19:08.915   get /zi/devices -
+2025.08.24 03:19:08.915   get /zi/about/fullversion -
+2025.08.24 03:19:08.915   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.08.24 03:19:08.916   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.08.24 03:19:08.916   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.08.24 03:19:08.916   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.08.24 03:19:08.916   get /dev12296/system/clocks/referenceclock/in/source -
+2025.08.24 03:19:08.916   get /dev12296/system/clocks/referenceclock/in/status -
+2025.08.24 03:19:08.916   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.08.24 03:19:08.916   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.08.24 03:19:08.916   get /dev12296/system/clocks/referenceclock/in/source -
+2025.08.24 03:19:08.917   get /dev12296/system/clocks/referenceclock/in/status -
