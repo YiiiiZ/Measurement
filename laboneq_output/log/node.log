@@ -213447,3 +213447,14 @@ or (192 B)
 2025.08.26 09:01:30.410   get /dev12296/system/clocks/referenceclock/in/status -
 2025.08.26 09:01:30.410   get /dev12296/system/clocks/referenceclock/in/freq -
 2025.08.26 09:01:30.410   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.08.28 15:08:26.302 Node log from the data server with id 'zi_server':
+2025.08.28 15:08:26.302   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.08.28 15:08:26.302   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.08.28 15:08:26.302   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.08.28 15:08:26.302   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.08.28 15:08:26.303   get /dev12296/system/clocks/referenceclock/in/source -
+2025.08.28 15:08:26.303   get /dev12296/system/clocks/referenceclock/in/status -
+2025.08.28 15:08:26.303   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.08.28 15:08:26.303   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.08.28 15:08:26.303   get /dev12296/system/clocks/referenceclock/in/source -
+2025.08.28 15:08:26.303   get /dev12296/system/clocks/referenceclock/in/status -
