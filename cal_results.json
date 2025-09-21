@@ -1,0 +1,16 @@
+{
+  "Q1": {
+    "qb_freq": 5124500000.0,
+    "res_freq_dressed": 6789000000.0,
+    "res_freq": 6800000000.0,
+    "pi_pulse_range": [
+      5120000000.0,
+      5126000000.0
+    ],
+    "pi_pulse_amp": 0.18,
+    "pi_pulse_length": 8e-08,
+    "T1": 2.2e-05,
+    "RamseyT2": 9e-06,
+    "EchoT2": 1.4e-05
+  }
+}
