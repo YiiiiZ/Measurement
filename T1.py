@@ -1,31 +1,46 @@
 import numpy as np
 from scipy.optimize import curve_fit
 import os
+import time
 import matplotlib.pyplot as plt
 import pandas as pd
+from tools import *
+from pathlib import Path
+from laboneq.contrib.example_helpers.plotting.plot_helpers import *
 
-from measurement import *
-
-def run_T1(device_setup, session,
-           qubit_label = 'Q1'
-           num_averages = 12,
-           delay_start = 1e-8
+def run_T1(device_setup, 
+           session,
+           qubit_label,
+           num_averages,
+           delay_start,
            delay_stop,
            delay_num,
-           drive_length,
-           drive_range,
-           drive_amp,
            measure_length,
            measure_range,
            measure_amp,
            acquire_range,
            rlx_time = 150e6,
+           plot_simulation = False
            ):
+    # Fetch previously saved qubit parameters
+    rs = ResultSaver()
+    qb_freq = rs.getf(qubit_label, "qb_freq")
+    res_freq = rs.getf(qubit_label, "res_freq")
+    drive_length = rs.getf(qubit_label, "pi_pulse_length")
+    drive_amp = rs.getf(qubit_label, "pi_pulse_amp")
+    drive_range = rs.getf(qubit_label, "pi_pulse_range")
+    # Find LO frequencies
+    qb_lo_freq = find_lo_freq(qb_freq)
+    res_lo_freq = find_lo_freq(res_freq)
+
+    # Create Pulses
     x180 = pulse_library.const(uid="x180", length=drive_length, amplitude=drive_amp)
     readout_pulse = pulse_library.const(uid="readout_pulse", length=measure_length, amplitude=measure_amp)
+    # Create Sweep
     delay_sweep = LinearSweepParameter(uid="delay", start=delay_start, stop=delay_stop, count=delay_num)
+
     def experiment(num_averages, delay_sweep, x180, readout_pulse, measure_length, rlx_time):
-        # Create Experiment
+        # Define Experiment
         exp = Experiment(
             uid="T1 experiment",
             signals=[
@@ -44,8 +59,7 @@ def run_T1(device_setup, session,
                     exp.play(signal="drive", pulse=x180)
                     exp.delay(signal="drive", time=delay_sweep)
                 with exp.section(uid="qubit_readout", play_after="qubit_excitation"):
-                    exp.measure(
-                            measure_signal='measure',
+                    exp.measure(measure_signal='measure',
                             measure_pulse=readout_pulse,
                             acquire_signal="acquire",
                             integration_length = measure_length,
@@ -55,13 +69,30 @@ def run_T1(device_setup, session,
                     exp.reserve(signal="measure")
                     exp.reserve(signal = "acquire")
         return exp
-    exp = experiment(num_averages, delay_sweep, x180, readout_pulse, measure_length, rlx_time)
-    exp.set_signal_map(signal_map_default(device_setup))
-    exp.set_calibration(calibration(qb_freq, qb_lo_freq, res_freq, res_lo_freq, drive_range, measure_range, acquire_range))
-    compiled_t1 = session.compile(exp)
+    # Create experiment
+    Exp = experiment(num_averages, delay_sweep, x180, readout_pulse, measure_length, rlx_time)
+
+    Exp.set_signal_map(signal_map_default(device_setup))
+    Exp.set_calibration(calibration(qb_freq, qb_lo_freq, res_freq, res_lo_freq, drive_range, measure_range, acquire_range))
+
+    compiled_t1 = session.compile(Exp)
+
+    Path("Pulse_Sheets").mkdir(parents=True, exist_ok=True)
+    show_pulse_sheet("Pulse_Sheets/T1", compiled_t1)
+
+    if plot_simulation == True:
+        plot_simulation(session.compiled_experiment, start_time=1e-8, length=500e-6)
+
+    T1_results = session.run()
+
+    return T1_results
 
 
-def T1_plot(T1_results):
+def T1_plot(T1_results, qubit_label):
+    # --- Make output folder + timestamp ---
+    outdir = "T1_results"
+    os.makedirs(outdir, exist_ok=True)
+    timestamp = time.strftime("%Y%m%dT%H%M%S")
     # ---------- Settings ----------
     T1_data = T1_results.get_data("t1_exp")            # complex data
     T1_data_axis = T1_results.get_axis("t1_exp")[0]    # seconds
@@ -128,5 +159,7 @@ def T1_plot(T1_results):
     csv_path = os.path.join(outdir, f"T1_experiment_{qubit_label}_{timestamp}.csv")
     df.to_csv(csv_path, index=False)
     print(f"Saved data to {csv_path}")
-
+    # ---------- Save T1 value only ----------
+    rs = ResultSaver()
+    rs.save_qubit(qubit_label, T1=T1_fit_us)
     plt.show()

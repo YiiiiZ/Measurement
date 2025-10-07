@@ -2,7 +2,6 @@ from __future__ import annotations
 from typing import Dict, Any, Iterable
 import json
 
-
 class ResultSaver:
     def __init__(self):
         # Internal layout: {"Q1": {...}, "Q2": {...}}
@@ -74,7 +73,7 @@ class ResultSaver:
 #     qb_freq=5.123e9,
 #     res_freq_dressed=6.789e9,
 #     res_freq=6.800e9,
-#     pi_pulse_range=(5.120e9, 5.126e9),
+#     pi_pulse_range=-10,
 #     pi_pulse_amp=0.18,
 #     pi_pulse_length=80e-9,
 #     T1=22e-6,

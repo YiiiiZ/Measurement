@@ -237471,3 +237471,25 @@ or (192 B)
 2025.09.21 02:03:44.374   get /dev12296/system/clocks/referenceclock/in/freq -
 2025.09.21 02:03:44.374   get /dev12296/system/clocks/referenceclock/in/sourceactual -
 2025.09.21 02:03:44.374   get /dev12296/system/clocks/referenceclock/in/source -
+2025.09.24 17:57:35.159 Node log from the data server with id 'zi_server':
+2025.09.24 17:57:35.160   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.09.24 17:57:35.160   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.09.24 17:57:35.160   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.09.24 17:57:35.160   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.09.24 17:57:35.160   get /dev12296/system/clocks/referenceclock/in/source -
+2025.09.24 17:57:35.160   get /dev12296/system/clocks/referenceclock/in/status -
+2025.09.24 17:57:35.160   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.09.24 17:57:35.160   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.09.24 17:57:35.160   get /dev12296/system/clocks/referenceclock/in/source -
+2025.09.24 17:57:35.160   get /dev12296/system/clocks/referenceclock/in/status -
+2025.09.24 18:26:59.941 Node log from the data server with id 'zi_server':
+2025.09.24 18:26:59.941   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.09.24 18:26:59.942   get /dev12296/raw/system/awg/runtimechecks/enable -
+2025.09.24 18:26:59.942   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.09.24 18:26:59.942   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.09.24 18:26:59.942   get /dev12296/system/clocks/referenceclock/in/source -
+2025.09.24 18:26:59.942   get /dev12296/system/clocks/referenceclock/in/status -
+2025.09.24 18:26:59.942   get /dev12296/system/clocks/referenceclock/in/freq -
+2025.09.24 18:26:59.942   get /dev12296/system/clocks/referenceclock/in/sourceactual -
+2025.09.24 18:26:59.942   get /dev12296/system/clocks/referenceclock/in/source -
+2025.09.24 18:26:59.942   get /dev12296/system/clocks/referenceclock/in/status -
